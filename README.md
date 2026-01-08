@@ -15,26 +15,6 @@ Raw text (CSV)
 
 The same pipeline can be reused for new subreddits or time periods without changes to the core logic.
 
-## Repository Structure
-
-NLP-Environmental-Policies-Analysis/
-├── README.md
-├── requirements.txt
-├── .gitignore
-└── nlp_pipeline/
-    ├── run_pipeline.py
-    ├── config/
-    │   └── stopwords.txt
-    ├── data/
-    │   ├── raw/
-    │   └── processed/
-    └── src/
-        ├── io.py
-        ├── preprocess.py
-        ├── sentiment.py
-        ├── sector_mapping.py
-        └── aggregate.py
-
 ## How to Run
 
 Install dependencies:
