@@ -2,10 +2,6 @@
 
 A lightweight, reusable NLP data pipeline for processing real-world Reddit discussions about environmental policies and generating structured, sector-level sentiment metrics.
 
-The project emphasizes reliability, reproducibility, and clean pipeline design rather than complex model training.
-
----
-
 ## Overview
 
 This pipeline transforms noisy, unstructured text data into structured outputs through a standardized workflow:
@@ -18,8 +14,6 @@ Raw text (CSV)
 → Output CSV
 
 The same pipeline can be reused for new subreddits or time periods without changes to the core logic.
-
----
 
 ## Repository Structure
 
@@ -41,8 +35,6 @@ NLP-Environmental-Policies-Analysis/
         ├── sector_mapping.py
         └── aggregate.py
 
----
-
 ## How to Run
 
 Install dependencies:
@@ -54,8 +46,6 @@ Place a CSV file in nlp_pipeline/data/raw/ with a column named `text`.
 Run the pipeline:
 python3 nlp_pipeline/run_pipeline.py
 
----
-
 ## Output
 
 The pipeline produces:
@@ -63,16 +53,12 @@ nlp_pipeline/data/processed/final.csv
 
 The output contains sector-level sentiment aggregates, comment counts, and mean VADER compound scores.
 
----
-
 ## Design Choices
 
 - Sentiment Analysis: VADER for transparent, rule-based scoring
 - Sector Mapping: Keyword-based lookup tables for interpretability
 - Preprocessing: Standardized and configurable text cleaning
 - Pipeline Design: Modular components with a single entry point
-
----
 
 ## Technologies
 
